@@ -72,7 +72,7 @@ export default function StyledForm() {
                }}
           >
                {(formikProps) => (
-                    <ScrollView style={styles.scrollView}>
+                    <ScrollView style={formStyles.scrollView}>
                          <StyledInput
                               label="Social security number"
                               formikProps={formikProps}
@@ -110,7 +110,7 @@ export default function StyledForm() {
           </Formik>
      );
 }
-const styles = StyleSheet.create({
+const formStyles = StyleSheet.create({
      scrollView: {
           paddingTop: 40,
      },
